@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blockchains",
+  "info": {
+    "singularName": "blockchain",
+    "pluralName": "blockchains",
+    "displayName": "Blockchain"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "chain_id": {
+      "type": "integer"
+    }
+  }
+}

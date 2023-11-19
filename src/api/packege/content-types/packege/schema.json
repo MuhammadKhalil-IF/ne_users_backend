@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packeges",
+  "info": {
+    "singularName": "packege",
+    "pluralName": "packeges",
+    "displayName": "packege",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "api_calls": {
+      "type": "biginteger"
+    },
+    "rate_limit": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "packeges"
+    }
+  }
+}

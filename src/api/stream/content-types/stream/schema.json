@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "streams",
+  "info": {
+    "singularName": "stream",
+    "pluralName": "streams",
+    "displayName": "stream",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "webhook_url": {
+      "type": "string",
+      "required": true
+    },
+    "chain": {
+      "type": "string",
+      "required": true
+    },
+    "admin": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "streams"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::address.address",
+      "inversedBy": "streams"
+    }
+  }
+}
