@@ -65,20 +65,16 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "packege_id": {
-      "type": "integer"
-    },
-    "packeges": {
+    "package": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::packege.packege",
-      "mappedBy": "user"
+      "relation": "oneToOne",
+      "target": "api::packege.packege"
     },
     "streams": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::stream.stream",
-      "mappedBy": "admin"
+      "mappedBy": "user"
     }
   }
 }
