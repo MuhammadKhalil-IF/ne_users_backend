@@ -4,7 +4,7 @@
   "info": {
     "singularName": "packege",
     "pluralName": "packeges",
-    "displayName": "packege",
+    "displayName": "package",
     "description": ""
   },
   "options": {
@@ -23,12 +23,6 @@
     },
     "rate_limit": {
       "type": "integer"
-    },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "packeges"
     }
   }
 }

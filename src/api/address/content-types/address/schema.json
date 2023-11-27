@@ -15,11 +15,10 @@
     "address": {
       "type": "string"
     },
-    "streams": {
+    "stream": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::stream.stream",
-      "mappedBy": "address"
+      "relation": "oneToOne",
+      "target": "api::stream.stream"
     }
   }
 }

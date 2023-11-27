@@ -23,16 +23,10 @@
       "type": "string",
       "required": true
     },
-    "admin": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "streams"
-    },
-    "address": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::address.address",
       "inversedBy": "streams"
     }
   }
